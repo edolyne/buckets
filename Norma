@@ -1,0 +1,97 @@
+name: "buckets"
+tasks:
+  
+  #### Assets Copy
+  copy:
+    "src": "./client/assets/**/*"
+    "dest": "./public"
+    
+  docs:
+    "@extend": "copy"
+    "src": "./docs/api/**/*"
+    "dest": "./public/docs/api"
+    
+  ace:
+    "@extend": "copy"
+    "src": "./bower_components/ace-builds/src-min-noconflict/**/*"
+    "dest": "./public/js/ace/"
+    
+  fontastic:
+    "@extend": "copy"
+    "src": "./client/assets/fontastic/fonts/**/*"
+    "dest": "./public/css/fonts/"
+    
+  #### Watching
+  javascript:
+    "src": "./server/routes/api/**/*"
+    "dest": ""
+    
+  markup:
+    "src": ""
+    "dest": ""
+    
+  sass:
+    "src": "./client/style/**/*"
+    "dest": "./public/css"
+    
+  sassPlugins:
+    "@extend": "sass"
+    "src": "./.plugins/**/*"
+    "dest": "./public/css"
+    
+  less:
+    "src": "./client/style/**/*"
+    "dest": "./public/css"
+    
+  
+  # apidoc:
+  #   files: ['server/routes/api/**/*.coffee']
+  #   tasks: ['apidoc', 'copy:docs']
+
+  # clientjs:
+  #   files: [
+  #     'client/**/*.{coffee,hbs}'
+  #   ]
+  #   tasks: ['browserify:app']
+  #   options:
+  #     interrupt: yes
+
+  # clientTest:
+  #   files: ['test/client/**/*.coffee']
+  #   tasks: ['test:client']
+
+  # serverTest:
+  #   files: ['test/server/**/*.coffee']
+  #   tasks: ['shell:mocha']
+  #   options:
+  #     interrupt: yes
+
+  style:
+    files: ['client/style/**/*.{styl,less}', 'node_modules/buckets-*/**/*.styl']
+    tasks: ['build-style']
+
+  express:
+    files: ['server/**/*.coffee', 'node_modules/buckets-*/*.{coffee,hbs}', '.env']
+    tasks: ['express:dev']
+    options:
+      spawn: false
+      livereload: true
+
+  # pluginScripts:
+  #   files: ['node_modules/buckets-*/**/{models,controllers,helpers,templates,views}/**/*.{coffee,hbs}', 'node_modules/buckets-*/*.{coffee,hbs}']
+  #   tasks: ['browserify:plugins', 'uglify:plugins']
+
+  # pluginStyles:
+  #   files: ['node_modules/buckets-*/**/*.styl']
+  #   tasks: ['stylus:plugins', 'concat:pluginsStyle']
+  #   options:
+  #     livereload: true
+
+  # livereload:
+  #   options:
+  #     livereload: true
+  #     interrupt: true
+  #   files: [
+  #     'public/{css,js}/*.{css,js}'
+  #     'public/plugins/**/*.{css,js}'
+  #   ]

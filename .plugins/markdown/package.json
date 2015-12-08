@@ -1,0 +1,47 @@
+{
+  "name": "buckets-markdown",
+  "version": "0.0.5",
+  "description": "Markdown FieldType for Buckets CMS.",
+  "main": "index.coffee",
+  "scripts": {},
+  "author": {
+    "name": "David Kaneda",
+    "email": "dk@morfunk.com",
+    "url": "http://www.davidkaneda.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucketsio/buckets-markdown.git"
+  },
+  "gitHead": "ec07b0b4bad7f669d495fb40c1fffdd72aa673f2",
+  "bugs": {
+    "url": "https://github.com/bucketsio/buckets-markdown/issues"
+  },
+  "homepage": "https://github.com/bucketsio/buckets-markdown",
+  "_id": "buckets-markdown@0.0.5",
+  "_shasum": "9484cf4ef1dd477dd6afe62336a990d5a0ccde2c",
+  "_from": "buckets-markdown@>=0.0.5 <0.0.6",
+  "_npmVersion": "2.1.6",
+  "_nodeVersion": "0.10.28",
+  "_npmUser": {
+    "name": "davidkaneda",
+    "email": "dk@morfunk.com"
+  },
+  "maintainers": [
+    {
+      "name": "davidkaneda",
+      "email": "dk@morfunk.com"
+    }
+  ],
+  "dist": {
+    "shasum": "9484cf4ef1dd477dd6afe62336a990d5a0ccde2c",
+    "tarball": "http://registry.npmjs.org/buckets-markdown/-/buckets-markdown-0.0.5.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/buckets-markdown/-/buckets-markdown-0.0.5.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -155,13 +155,13 @@ module.exports = (grunt) ->
           delay: 10
           debug: yes
 
-    less:
-      app:
-        expand: true,
-        cwd: 'client/style'
-        src: ['**/*.less']
-        dest: 'public/css/'
-        ext: '.css'
+    # less:
+    #   app:
+    #     expand: true,
+    #     cwd: 'client/style'
+    #     src: ['**/*.less']
+    #     dest: 'public/css/'
+    #     ext: '.css'
 
     modernizr:
       app:

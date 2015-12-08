@@ -1,0 +1,47 @@
+.center {
+  text-align: center;
+}
+
+strong,
+label,
+.label,
+.checkbox label {
+  font-weight: 500;
+}
+
+label,
+.label {
+  @extend .ui-text;
+}
+
+h4 {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+  font-family: $sans;
+
+  h3 + & {
+    margin-top: 0;
+  }
+}
+
+pre.code,
+textarea.code {
+  height: 500px;
+  font-size: 14px;
+  font-family: Menlo, 'Courier New', monospace;
+  line-height: 16px;
+  border-color: transparent;
+}
+
+textarea.code {
+  padding: 0 2px;
+  position: relative;
+  top: -1px;
+
+  &.loading {
+    opacity: .3;
+  }
+}

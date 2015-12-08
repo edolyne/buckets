@@ -1,0 +1,41 @@
+{
+  "name": "buckets-toggle",
+  "version": "0.0.1",
+  "description": "Toggle Field for Buckets",
+  "main": "index.coffee",
+  "author": {
+    "name": "Derek Kuschel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucketsio/buckets-toggle.git"
+  },
+  "gitHead": "8fb7ba97414df932cd49e0051f31c4653a2b472e",
+  "bugs": {
+    "url": "https://github.com/bucketsio/buckets-toggle/issues"
+  },
+  "homepage": "https://github.com/bucketsio/buckets-toggle",
+  "_id": "buckets-toggle@0.0.1",
+  "scripts": {},
+  "_shasum": "6e6a92eabc820744cb892af51c7761580f051177",
+  "_from": "buckets-toggle@>=0.0.1 <0.0.2",
+  "_npmVersion": "2.1.6",
+  "_nodeVersion": "0.10.28",
+  "_npmUser": {
+    "name": "davidkaneda",
+    "email": "dk@morfunk.com"
+  },
+  "maintainers": [
+    {
+      "name": "davidkaneda",
+      "email": "dk@morfunk.com"
+    }
+  ],
+  "dist": {
+    "shasum": "6e6a92eabc820744cb892af51c7761580f051177",
+    "tarball": "http://registry.npmjs.org/buckets-toggle/-/buckets-toggle-0.0.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/buckets-toggle/-/buckets-toggle-0.0.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

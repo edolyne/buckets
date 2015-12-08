@@ -1,0 +1,23 @@
+<div class="form-group">
+  <label for="input-{{slug}}">{{name}}</label>
+    <div class="text-area-{{slug}}">
+      
+      <link rel="stylesheet" href="http://edolyne.images.s3.amazonaws.com/redactor.css">
+
+      {{textarea slug value instructions=instructions required=required className="markdown form-control" size=settings.size placeholder=placeholder}}
+
+    </div>
+
+    <script>
+      
+      
+      
+      
+      $(function() {
+          $(document.getElementsByName('{{slug}}')).redactor({
+            s3: 'url'
+          });
+      });
+      
+    </script>
+</div>
